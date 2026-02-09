@@ -1,0 +1,22 @@
+apiVersion: v2
+name: ipgeolocation
+description: Umbrella chart to install API, Frontend, Redis, and Ingress
+type: application
+version: 1.0.0
+
+dependencies:
+  - name: api
+    version: 1.0.0
+    repository: "http://172.31.0.28/api"
+
+  - name: frontend
+    version: 1.0.0
+    repository: "http://172.31.0.28/frontend"
+
+  - name: redis
+    version: 1.0.0
+    repository: "http://172.31.0.28/redis"
+
+  - name: ingress
+    version: 1.0.0
+    repository: "http://172.31.0.28/ingress"

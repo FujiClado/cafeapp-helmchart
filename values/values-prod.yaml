@@ -1,0 +1,19 @@
+api:
+
+  deployment:
+    replicas: 1
+  resources:
+    enabled: false
+  service:
+    type: ClusterIP
+frontend:
+
+  deployment:
+    replicas: 1
+  resources:
+    enabled: false
+  service:
+    type: ClusterIP
+
+ingress:
+  host: ipgeolocation-prod.devopsclass.shop

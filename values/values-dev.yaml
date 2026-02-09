@@ -1,0 +1,22 @@
+api:
+
+  deployment:
+    replicas: 1
+  resources:
+    enabled: false
+  service:
+    type: ClusterIP
+  container:
+    name: fujikomalan/k8s-ipgeolocation-api
+    tag: v2
+frontend:
+
+  deployment:
+    replicas: 1
+  resources:
+    enabled: false
+  service:
+    type: ClusterIP
+
+ingress:
+  host: ipgeolocation-dev.devopsclass.shop
