@@ -1,7 +1,7 @@
 api:
 
   deployment:
-    replicas: 1
+    replicas: 2
   resources:
     enabled: false
   service:
@@ -9,7 +9,7 @@ api:
 frontend:
 
   deployment:
-    replicas: 1
+    replicas: 2
   resources:
     enabled: false
   service:
